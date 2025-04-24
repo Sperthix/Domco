@@ -1,0 +1,81 @@
+@layer utilities {
+
+    /* generated for custom theme */
+    .text-primary {
+      color: var(--color-text-primary);
+    }
+
+    .text-secondary {
+      color: var(--color-text-secondary);
+    }
+
+    .text-heading {
+      color: var(--color-text-heading);
+    }
+
+    .text-grey {
+      color: var(--color-text-grey);
+    }
+    
+    .text-green-heading {
+      color: var(--color-green-heading);
+    }
+
+    .text-green-dark {
+      color: var(--color-green-dark);
+    }
+
+    .text-orange-highlight {
+      color: var(--color-orange-highlight);
+    }
+  
+    .bg-green-light {
+      background-color: var(--color-green-light);
+    }
+
+    .bg-green-bg {
+      background-color: var(--color-green-bg);
+    }
+
+    .bg-green-dark {
+      background-color: var(--color-green-dark);
+    }
+
+    .bg-orange-bg {
+      background-color: var(--color-orange-bg);
+    }
+  
+    .border-orange-border {
+      border-color: var(--color-orange-border);
+    }
+  
+    .text-brown {
+      color: var(--color-brown);
+    }
+
+    .bg-brown {
+      background-color: var(--color-brown);
+    }
+
+    .border-brown {
+      border-color: var(--color-brown);
+    }
+
+    /* other utilities */
+    .container {
+        max-width: 1028px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    
+      @media (min-width: 1536px) {
+        .container {
+          padding-left: 2rem;
+          padding-right: 2rem;
+        }
+      }
+  }
+  
+  

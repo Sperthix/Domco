@@ -1,0 +1,35 @@
+@theme {
+    --font-primary: 'Kenit', sans-serif;
+    --color-text-primary: #282828; 
+    --color-text-secondary: #444444;
+    --color-text-heading: #402200;
+    --color-text-grey: #666666;
+    --color-green-light: #159B68;
+    --color-green-bg: #009966;
+    --color-green-heading: #146047;
+    --color-green-dark: #04462D;
+    --color-orange-bg: #FF8500;
+    --color-orange-highlight: #FF8300;
+    --color-orange-border: #F6861F;
+    --color-brown: #402200;
+}
+
+@layer base {
+
+    *, *::before, *::after {
+        @apply box-border;
+    }
+
+    html {
+        font-family: var(--font-primary);
+    }
+
+    h1 {
+        @apply text-[4.375rem] font-medium leading-none;
+    }
+
+    h2 {
+        @apply text-[3rem] font-medium leading-none;
+    }
+
+}
