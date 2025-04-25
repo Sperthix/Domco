@@ -63,19 +63,23 @@
 
     /* other utilities */
     .container {
-        max-width: 1028px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 1rem;
-        padding-right: 1rem;
-      }
+      max-width: 1028px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
     
-      @media (min-width: 1536px) {
-        .container {
-          padding-left: 2rem;
-          padding-right: 2rem;
-        }
+    @media (min-width: 1536px) {
+      .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
       }
+    }
+
+    .flex-container {
+      @apply flex items-center justify-center;
+    }
   }
   
   
