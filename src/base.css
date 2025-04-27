@@ -1,17 +1,24 @@
 @theme {
-    --font-primary: 'Kenit', sans-serif;
+    --font-primary: 'Kanit', sans-serif;
     --color-text-primary: #282828; 
     --color-text-secondary: #444444;
     --color-text-heading: #402200;
     --color-text-grey: #666666;
+
     --color-green-light: #159B68;
     --color-green-bg: #009966;
     --color-green-heading: #146047;
     --color-green-dark: #04462D;
+
     --color-orange-bg: #FF8500;
     --color-orange-highlight: #FF8300;
     --color-orange-border: #F6861F;
+
     --color-brown: #402200;
+
+    --color-grey-border: #9B9B9B;
+    --color-grey-bg: #EBEBEB;
+    --color-grey-light: #BCBCBC;
 }
 
 @layer base {
@@ -22,14 +29,19 @@
 
     html {
         font-family: var(--font-primary);
+        overflow-x: hidden;
     }
 
     h1 {
-        @apply text-[4.375rem] font-medium leading-none;
+        @apply text-[4.375rem] font-medium text-[var(--color-green-light)] leading-none;
     }
 
     h2 {
-        @apply text-[3rem] font-medium leading-none;
+        @apply text-[3rem] font-medium text-[var(--color-green-heading)] leading-none text-left;
+    }
+
+    p {
+        @apply text-[1.25rem] text-[var(--color-text-primary)] leading-none tracking-normal;
     }
 
 }

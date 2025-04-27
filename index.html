@@ -16,54 +16,83 @@
     <header class="flex flex-col">
 
       <!-- Akcia banner -->
-      <div class="flex items-center justify-around bg-green-light text-white py-4.5">
-        <span>
-          Pozor! Len teraz špeciálna akcia. Ku každej realizácii tlakový čistič zdarma!
-        </span>
-        <div class="flex items-center gap-9">
-          <span>tel: +421 911 222 333</span>
-          <span>domco@domco.sk</span>
+      <div class="bg-green-light">
+        <div class="container-wrapper flex items-center justify-between text-white py-4.5 text-[0.75rem] leading-none tracking">
+          <span>
+            Pozor! Len teraz špeciálna akcia. Ku každej realizácii tlakový čistič zdarma!
+          </span>
+          <div class="flex items-center gap-9">
+            <div class="flex items-center justify-between gap-2.5">
+              <img src="src/assets/icon-phone.svg" alt="telefón ikona" />
+              <span>tel: +421 911 222 333</span>
+            </div>
+            <div class="flex items-center justify-between gap-2.5">
+              <img src="src/assets/icon-mail.svg" alt="email ikona" />
+              <span>domco@domco.sk</span>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- Menu -->
-      <div class="container flex items-center justify-between py-6">
+      <div class="container-wrapper flex items-center justify-between py-6 w-full">
         <a href="#"><img src="src/assets/domco-logo.png" alt="Domco logo" /></a>
         <nav class="flex items-center justify-between gap-9">
-          <ul class="flex items-center justify-between gap-9.5">
+          <ul class="flex items-center justify-between gap-9.5 text-[0.875rem] leading-none tracking-normal">
             <li><a href="#">Produkty</a></li>
             <li><a href="#">Riešenia</a></li>
             <li><a href="#">Škola izolácie</a></li>
             <li><a href="#">O nás</a></li>
             <li><a href="#">Realizácie</a></li>
           </ul>
-          <button>Vypočítať cenu</button>
+          <button class="btn-calculate">
+            <img src="src/assets/calculator.svg" alt="kalkulačka" class="w-2.75" />
+            <span class="font-medium text-[0.875rem] tracking-normal">Vypočítať cenu</span>
+          </button>
         </nav>
       </div>
     </header>
 
     <main>
+
       <!-- Hero -->
-      <section">
-        <div class="container">
-          <h1>Moderné zateplenie a izolácia objektov</h1>
-          <div>
-            <h2>Vyskúšajte našu online kalkulčku!</h2>
-            <p>Sme za férovú komunikáciu, a preto ako jediní na trhu ponúkame online kalkuláciu priamo na našom webe.</p>
-            <button class="flex items-center justify-between gap-6 bg-black text-white border-round-sm">
-              <img src="src/assets/calculator.svg" alt="kalkulačka" class="text-white"/>
-              <span>Vypočítať cenu online</span>
-            </button>
+      <section class="relative mb-15">
+        <!-- Horná časť: obrázok + text -->
+        <div class="relative min-h-[530px] flex items-center">
+          <!-- Pozadie hero image -->
+          <div class="absolute top-0 bottom-0 right-0 left-[-250px] overflow-hidden">
+            <div class="hero-img"></div>
+          </div>
+          <!-- Text na hero -->
+          <div class="container-wrapper relative flex items-center justify-end">
+            <h1 class="w-[65%] -mt-50 -mr-10">Moderné zateplenie a izolácia objektov</h1>
+          </div>
+        </div>
+
+        <!-- Spodná oranžová časť -->
+        <div class="relative w-[70%] -mt-35 ml-auto h-[350px] overflow-hidden bg-hero-shape">
+          <div class="container-wrapper py-10 flex items-center gap-8 -mt-15">
+            <img src="src/assets/house.png" alt="domček" class="w-[350px] h-auto" />
+            <div class="flex flex-col justify-center gap-5 w-[40%]">
+              <h2 class="text-white tracking-[-0.01em]">Vyskúšajte našu online kalkulačku!</h2>
+              <p>Sme za férovú komunikáciu, a preto ako jediní na trhu ponúkame online kalkuláciu priamo na našom webe.</p>
+              <button class="flex items-center justify-center gap-2 px-6 py-3 bg-black text-white rounded-[8px] w-max cursor-pointer">
+                <img src="src/assets/calculator.svg" alt="kalkulačka" class="w-5 h-5" />
+                <span>Vypočítať cenu online</span>
+              </button>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Reviews - Swiper -->
-      <section>
-        <h2>Čo o nás hovoria naši zákazníci?</h2>
+      <section class="relative flex flex-col mb-20">
+        <div class="container-wrapper">
+          <h2 class="mb-10 w-[40%]">Čo o nás hovoria naši zákazníci?</h2>
+        </div>
         <div class="swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide p-8">
+            <div class="swiper-slide">
               <div class="flex items-center justify-start gap-2.25">
                 <img src="src/assets/star.svg" alt="hviezda"/>
                 <img src="src/assets/star.svg" alt="hviezda"/>
@@ -71,12 +100,12 @@
                 <img src="src/assets/star.svg" alt="hviezda"/>
                 <img src="src/assets/star.svg" alt="hviezda"/>
               </div>
-              <p>
+              <p class="swiper-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.
               </p>
-              <span>– Martin K.</span>
+              <span class="swiper-name">– Martin K.</span>
             </div>
-            <div class="swiper-slide p-8">
+            <div class="swiper-slide">
               <div class="flex items-center justify-start gap-2.25">
                 <img src="src/assets/star.svg" alt="hviezda"/>
                 <img src="src/assets/star.svg" alt="hviezda"/>
@@ -84,12 +113,12 @@
                 <img src="src/assets/star.svg" alt="hviezda"/>
                 <img src="src/assets/star.svg" alt="hviezda"/>
               </div>
-              <p>
+              <p class="swiper-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.
               </p>
-              <span>– Martin K.</span>
+              <span class="swiper-name">– Martin K.</span>
             </div>
-            <div class="swiper-slide p-8">
+            <div class="swiper-slide">
               <div class="flex items-center justify-start gap-2.25">
                 <img src="src/assets/star.svg" alt="hviezda"/>
                 <img src="src/assets/star.svg" alt="hviezda"/>
@@ -97,12 +126,12 @@
                 <img src="src/assets/star.svg" alt="hviezda"/>
                 <img src="src/assets/star.svg" alt="hviezda"/>
               </div>
-              <p>
+              <p class="swiper-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.
               </p>
-              <span>– Martin K.</span>
+              <span class="swiper-name">– Martin K.</span>
             </div>
-            <div class="swiper-slide p-8">
+            <div class="swiper-slide">
               <div class="flex items-center justify-start gap-2.25">
                 <img src="src/assets/star.svg" alt="hviezda"/>
                 <img src="src/assets/star.svg" alt="hviezda"/>
@@ -110,12 +139,12 @@
                 <img src="src/assets/star.svg" alt="hviezda"/>
                 <img src="src/assets/star.svg" alt="hviezda"/>
               </div>
-              <p>
+              <p class="swiper-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.
               </p>
-              <span>– Martin K.</span>
+              <span class="swiper-name">– Martin K.</span>
             </div>
-            <div class="swiper-slide p-8">
+            <div class="swiper-slide">
               <div class="flex items-center justify-start gap-2.25">
                 <img src="src/assets/star.svg" alt="hviezda"/>
                 <img src="src/assets/star.svg" alt="hviezda"/>
@@ -123,12 +152,12 @@
                 <img src="src/assets/star.svg" alt="hviezda"/>
                 <img src="src/assets/star.svg" alt="hviezda"/>
               </div>
-              <p>
+              <p class="swiper-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.
               </p>
-              <span>– Martin K.</span>
+              <span class="swiper-name">– Martin K.</span>
             </div>
-            <div class="swiper-slide p-8">
+            <div class="swiper-slide">
               <div class="flex items-center justify-start gap-2.25">
                 <img src="src/assets/star.svg" alt="hviezda"/>
                 <img src="src/assets/star.svg" alt="hviezda"/>
@@ -136,200 +165,274 @@
                 <img src="src/assets/star.svg" alt="hviezda"/>
                 <img src="src/assets/star.svg" alt="hviezda"/>
               </div>
-              <p>
+              <p class="swiper-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.
               </p>
-              <span>– Martin K.</span>
+              <span class="swiper-name">– Martin K.</span>
             </div>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-arrows">
+            <div id="swiper-btn-prev" class="btn-arrow">
+              <img src="src/assets/Arrow.svg" alt="Šípka vľavo" class=""/>
+            </div>
+            <div id="swiper-btn-next" class="btn-arrow">
+              <img src="src/assets/Arrow.svg" alt="Šípka vpravo" class="rotate-180"/>
+            </div>
+          </div>
         </div>
-        <button>Všetky recenzie</button>
+        <button class="rounded-[5px] mt-9 py-2 px-16 self-center bg-[var(--color-green-dark)] text-white cursor-pointer">
+          Všetky recenzie
+        </button>
       </section>
 
       <!-- Cards -->
-      <section>
-        <div class="container">
-          <div>
-            <div>
-              <h2>Izolační technologie, která odpovídá požadavkům kvality</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum</p>
+      <section class="mb-18">
+        <div>
+          <div class="relative bg-[var(--color-green-bg)] py-7.5 mb-10">
+            <div class="container-wrapper">
+              <h2 class="text-white mb-7.5 max-w-2/3">Izolační technologie, která odpovídá požadavkům kvality</h2>
+              <p class="max-w-2/3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum</p>
             </div>
-            <img src="src/assets/car.png"/>
+            <div class="absolute top-0 right-0 bottom-0 w-[35%] min-h-[260px] bg-white clip-path-car z-0 flex items-center"></div>
+            <img src="src/assets/car.png" class="absolute top-10 right-45 w-[300px] z-10 opacity-100" />
           </div>
-          <div>
+          <div class="container-wrapper flex items-stretch justify-between gap-5.25">
             <div class="card">
-              <img src="src/assets/icon-hourglass.svg" alt="hodiny" />
-              <h3>Trvanlivost izolací</h3>
-              <p>Během životnosti stavby neměnné tepelně izolační vlastnosti</p>
+              <img src="src/assets/icon-hourglass.svg" alt="hodiny" class="card-img" />
+              <h3 class="card-heading">Trvanlivost izolací</h3>
+              <p class="card-text">Během životnosti stavby neměnné tepelně izolační vlastnosti</p>
             </div>
             <div class="card">
-              <img src="src/assets/icon-stopwatch.svg" alt="stopky" />
-              <h3>Rychlá aplikace</h3>
-              <p>Izolace střechy běžného rodinného domu v průběhu jednoho dne</p>
+              <img src="src/assets/icon-stopwatch.svg" alt="stopky" class="card-img" />
+              <h3 class="card-heading">Rychlá aplikace</h3>
+              <p class="card-text">Izolace střechy běžného rodinného domu v průběhu jednoho dne</p>
             </div>
             <div class="card">
-              <img src="src/assets/icon-achievment.svg" alt="certifikát" />
-              <h3>Certifikované produkty</h3>
-              <p>Naše společnost používá výhradně certifikované produkty NordSchild</p>
+              <img src="src/assets/icon-achievment.svg" alt="certifikát" class="card-img" />
+              <h3 class="card-heading">Certifikované produkty</h3>
+              <p class="card-text">Naše společnost používá výhradně certifikované produkty NordSchild</p>
             </div>
             <div class="card">
-              <img src="src/assets/icon-battery.svg" alt="batéria" />
-              <h3>Úspora až 70 % na energiách</h3>
-              <p>Izolace vám přinese okamžité snížení nákladů na energie</p>
+              <img src="src/assets/icon-battery.svg" alt="batéria" class="card-img" />
+              <h3 class="card-heading">Úspora až 70 % na energiách</h3>
+              <p class="card-text">Izolace vám přinese okamžité snížení nákladů na energie</p>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Isolation -->
-      <section class="container">
-        <h2>Certifikované izolačné PUR peny</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. </p>
-        <div class="flex-container gap-11">
-          <div>
-            <div>
-              <img src="src/assets/cube.png" alt="izolácia" />
-              <h3>NordSchild PLATINUM S</h3>
+      <section class="container-wrapper flex flex-col items-start gap-7 mb-17">
+        <h2 class="w-1/2">Certifikované izolačné PUR peny</h2>
+        <p class="w-1/2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+        </p>
+
+        <div class="flex flex-col xl:flex-row items-start gap-12 w-full mt-15">
+          
+          <!-- Card - platinum-S -->
+          <div class="card-plat">
+            <div class="card-plat-top border-[var(--color-orange-border)]">
+              <img src="src/assets/cube.png" alt="izolácia" class="min-w-[600px] h-auto z-10 -mt-60" />
+              <h3 class="card-plat-heading">
+                NordSchild PLATINUM S
+              </h3>
             </div>
-            <div>
-              <img src="src/assets/platinum-S.jpg" alt="platinum S" />
-              <p>Striekacia pena s otvorenou bunkovou štruktúrou, ktorá má o niečo vyššiu hustotu a lepšiu tepelnú vodivosť. Veľmi dobrá priľnavosť a súdržnosť, nízka nasiakavosť, vzduchotesnosť a paropriepustnosť. Určená na zvýšenie energetickej účinnosti vašej budovy.</p>
-              <p>Striekaná pena s otvorenými bunkami, navrhnutá s lepšou tepelnou vodivosťou.</p>
-              <span>Hustota 8 kg/m³</span>
-              <span>Nízka nasiakavosť 0,3 kg/m²</span>
-              <span>Veľmi dobrý tepelný odpor s λ = 0,037 w/mK</span>
-              <span>Trieda reakcie na oheň E</span>
-              <span>Vzduchotesná a paropriepustná izolácia</span>
-              <span>Celosvetová certifikácia 100 % bunky s otvorenou štruktúrou</span>
-              <button>
-                <img src="src/assets/calculator.svg" alt="kalkulačka" />
+
+            <div class="card-plat-bottom">
+              <img src="src/assets/platinum-S.png" alt="platinum S" class="w-full rounded-[12px]" />
+              <div class="separator-xl"></div>
+              <p class="card-plat-bottom-text">
+                Striekacia pena s otvorenou bunkovou štruktúrou, ktorá má o niečo vyššiu hustotu a lepšiu tepelnú vodivosť. Veľmi dobrá priľnavosť a súdržnosť, nízka nasiakavosť, vzduchotesnosť a paropriepustnosť. Určená na zvýšenie energetickej účinnosti vašej budovy.
+              </p>
+              <p class="card-plat-bottom-heading">
+                Striekaná pena s otvorenými bunkami, navrhnutá s lepšou tepelnou vodivosťou.
+              </p>
+              <div class="separator-xl"></div>
+              <div class="card-plat-text-list">
+                <span>Hustota 8 kg/m³</span>
+                <div class="separator-sm"></div>
+                <span>Nízka nasiakavosť 0,3 kg/m²</span>
+                <div class="separator-sm"></div>
+                <span>Veľmi dobrý tepelný odpor s λ = 0,037 w/mK</span>
+                <div class="separator-sm"></div>
+                <span>Trieda reakcie na oheň E</span>
+                <div class="separator-sm"></div>
+                <span>Vzduchotesná a paropriepustná izolácia</span>
+                <div class="separator-sm"></div>
+                <span>Celosvetová certifikácia 100 % bunky s otvorenou štruktúrou</span>
+              </div>
+
+              <button class="card-plat-button bg-[var(--color-orange-highlight)]">
+                <img src="src/assets/calculator.svg" alt="kalkulačka" class="w-5 h-5" />
                 <span>Technický list NordShield PS®</span>
               </button>
             </div>
           </div>
-          <div>
-            <div>
-              <img src="src/assets/cube.png" alt="izolácia" />
-              <h3>NordSchild PLATINUM S</h3>
+
+          <!-- Card - platinum-H -->
+          <div class="card-plat">
+            <div class="card-plat-top border-[var(--color-green-light)]">
+              <img src="src/assets/cube.png" alt="izolácia" class="min-w-[600px] h-auto z-10 -mt-60" />
+              <h3 class="card-plat-heading">
+                NordSchild PLATINUM H
+              </h3>
             </div>
-            <div>
-              <img src="src/assets/platinum-H.jpg" alt="platinum H" />
-              <p>Striekacia pena s otvorenou bunkovou štruktúrou, ktorá má o niečo vyššiu hustotu a lepšiu tepelnú vodivosť. Veľmi dobrá priľnavosť a súdržnosť, nízka nasiakavosť, vzduchotesnosť a paropriepustnosť. Určená na zvýšenie energetickej účinnosti vašej budovy.</p>
-              <p>Striekaná pena s otvorenými bunkami, navrhnutá s lepšou tepelnou vodivosťou.</p>
-              <span>Hustota 8 kg/m³</span>
-              <span>Nízka nasiakavosť 0,3 kg/m²</span>
-              <span>Veľmi dobrý tepelný odpor s λ = 0,037 w/mK</span>
-              <span>Trieda reakcie na oheň E</span>
-              <span>Vzduchotesná a paropriepustná izolácia</span>
-              <span>Celosvetová certifikácia 100 % bunky s otvorenou štruktúrou</span>
-              <button>
-                <img src="src/assets/calculator.svg" alt="kalkulačka" />
-                <span>Technický list NordShield PS®</span>
+
+            <div class="card-plat-bottom">
+              <img src="src/assets/platinum-H.png" alt="platinum H" class="w-full rounded-[12px]" />
+              <div class="separator-xl"></div>
+              <p class="card-plat-bottom-text">
+                Striekacia pena s otvorenou bunkovou štruktúrou, ktorá má o niečo vyššiu hustotu a lepšiu tepelnú vodivosť. Veľmi dobrá priľnavosť a súdržnosť, nízka nasiakavosť, vzduchotesnosť a paropriepustnosť. Určená na zvýšenie energetickej účinnosti vašej budovy.
+              </p>
+              <p class="card-plat-bottom-heading">
+                Striekaná pena s otvorenými bunkami, navrhnutá s lepšou tepelnou vodivosťou.
+              </p>
+              <div class="separator-xl"></div>
+              <div class="card-plat-text-list">
+                <span>Hustota 8 kg/m³</span>
+                <div class="separator-sm"></div>
+                <span>Nízka nasiakavosť 0,3 kg/m²</span>
+                <div class="separator-sm"></div>
+                <span>Veľmi dobrý tepelný odpor s λ = 0,037 w/mK</span>
+                <div class="separator-sm"></div>
+                <span>Trieda reakcie na oheň E</span>
+                <div class="separator-sm"></div>
+                <span>Vzduchotesná a paropriepustná izolácia</span>
+                <div class="separator-sm"></div>
+                <span>Celosvetová certifikácia 100 % bunky s otvorenou štruktúrou</span>
+              </div>
+
+              <button class="card-plat-button bg-[var(--color-green-light)]">
+                <img src="src/assets/calculator.svg" alt="kalkulačka" class="w-5 h-5" />
+                <span>Technický list NordShield PH®</span>
               </button>
             </div>
           </div>
+
         </div>
       </section>
 
-      <!-- Parts -->
-      <section class="container">
-        <h2>Realizujeme izolácie domov, drevostavieb, chát, pracovných hál.</h2>
-        <div>
-          <div>
-            <div class="flex-container">
+      <!-- Fun Part -->
+      <section class="container-wrapper mb-17">
+        <h2 class="mb-8">Realizujeme izolácie domov, drevostavieb, chát, pracovných hál.</h2>
+        <div class="flex">
+          <div class="parts-menu">
+            <!-- Menu -->
+            <button class="parts-menu-item" data-part="roof">
               <img src="src/assets/roof.svg" alt="strecha" />
               <span>Strecha</span>
-            </div>
-            <div class="flex-container">
+            </button>
+            <button class="parts-menu-item selected" data-part="attic">
               <img src="src/assets/attic.svg" alt="podkrovie" />
               <span>Podkrovie</span>
-            </div>
-            <div class="flex-container">
+            </button>
+            <button class="parts-menu-item" data-part="ceiling">
               <img src="src/assets/ceiling.svg" alt="strop" />
               <span>Strop</span>
-            </div>
-            <div class="flex-container">
+            </button>
+            <button class="parts-menu-item" data-part="walls">
               <img src="src/assets/walls.svg" alt="steny" />
               <span>Steny</span>
-            </div>
-            <div class="flex-container">
+            </button>
+            <button class="parts-menu-item" data-part="fasade">
               <img src="src/assets/fasade.svg" alt="fasáda" />
               <span>Fasáda</span>
-            </div>
-            <div class="flex-container">
+            </button>
+            <button class="parts-menu-item" data-part="floor">
               <img src="src/assets/floor.svg" alt="podlaha" />
               <span>Podlaha</span>
-            </div>
+            </button>
           </div>
-          <div>
-            <img src="src/assets/house.png" alt="vizualizácia" />
-            <div>
-              <p>Izolácia strechy mäkkou penou zvonka sa využíva najmä pri novostavbách na zachovanie priznaných krokiev. Pri starších domoch sa aplikuje pri rekonštrukciách, keď je minerálna vlna poškodená škodcami a vonkajšia prerábka je ekonomickejšia.</p>
-              <button>
-                <img src="src/assets/calculator.svg" alt="kalkulačka" />
-                <span>Vypočítať cenu online</span>
+          <div class="relative flex items-stretch justify-between gap-10 py-10 px-5 border-10 border-[var(--color-green-light)] rounded-[28px] w-4/5 bg-white pointer-events-none">
+            <img src="src/assets/house.png" alt="vizualizácia" class="w-[400px] h-auto"/>
+            <div class="flex flex-col items-stretch justify-between">
+              <div class="flex flex-col items-start justify-between gap-5">
+                <p id="part-description" class="text-secondary">Izolácia strechy mäkkou penou zvonka sa využíva najmä pri novostavbách na zachovanie priznaných krokiev. Pri starších domoch sa aplikuje pri rekonštrukciách, keď je minerálna vlna poškodená škodcami a vonkajšia prerábka je ekonomickejšia.</p>
+                <button class="flex items-center justify-between gap-5 bg-orange-highlight rounded-[8px] py-3 px-7 cursor-pointer">
+                  <img src="src/assets/calculator.svg" alt="kalkulačka" />
+                  <span>Vypočítať cenu online</span>
+                </button>
+              </div>
+              <button class="flex items-center justify-between self-end gap-2 bg-grey-light text-white rounded-[8px] py-3 px-5 w-[225px] cursor-pointer">
+                <img src="src/assets/play.svg" alt="play" />
+                <span class="whitespace-nowrap">Ako prebieha izolácia?</span>
               </button>
             </div>
           </div>
-          <button>
-            <img src="src/assets/play.svg" alt="play" />
-            <span>Ako prebieha izolácia?</span>
-          </button>
         </div>
       </section>
 
       <!-- News -->
-      <section>
-        <h2>Pravidelné novinky zo sveta izolácií</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. </p>
-        <div>
+      <section class="container-wrapper mb-20">
+        <h2 class="w-1/2 mb-7">Pravidelné novinky zo sveta izolácií</h2>
+        <p class="w-1/2 mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. </p>
+        <div class="flex items-center justify-between gap-8">
+
+          <!-- Article 1 -->
           <article>
-            <img src="src/assets/news1.png" alt="novinka 1" />
-            <h3>Nadpis pre blog článok 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. </p>
-            <button>Celý článok</button>
+            <img  src="src/assets/news1.png" 
+                  alt="novinka 1"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="article-img"></div>
+
+            <h3 class="article-heading">Nadpis pre blog článok 1</h3>
+            <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. </p>
+            <button class="article-btn">Celý článok</button>
           </article>
+          
+          <!-- Article 2 -->
           <article>
-            <img src="src/assets/news1.png" alt="novinka 1" />
-            <h3>Nadpis pre blog článok 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. </p>
-            <button>Celý článok</button>
+            <img  src="src/assets/news1.png" 
+                  alt="novinka 2"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="article-img"></div>
+
+            <h3 class="article-heading">Nadpis pre blog článok 2</h3>
+            <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. </p>
+            <button class="article-btn">Celý článok</button>
           </article>
+
+          <!-- Article 3 -->
           <article>
-            <img src="src/assets/news1.png" alt="novinka 1" />
-            <h3>Nadpis pre blog článok 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. </p>
-            <button>Celý článok</button>
+            <img  src="src/assets/news1.png" 
+                  alt="novinka 3"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="article-img"></div>
+
+            <h3 class="article-heading">Nadpis pre blog článok 3</h3>
+            <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. </p>
+            <button class="article-btn">Celý článok</button>
           </article>
         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div>
+    <footer class="bg-[var(--color-green-dark)] pt-19 pb-10">
+      <div class="container-wrapper">
+        <div class="flex items-start justify-between gap-10 mb-35">
           <div>
-            <img src="src/assets/domco-logo.png" alt="Domco logo" />
-            <p>
+            <img src="src/assets/domco-logo.png" alt="Domco logo" class="mb-5" />
+            <p class="footer-text mb-3">
               +421 948 211 611
               domco@izolaciapurpenou.sk
               Mallého 3082/68,909 01 Skalica 
               Slovensko
             </p>
-            <button>oznamy a záznamy</button>
+            <button class="text-[var(--color-green-light)] cursor-pointer">oznamy a záznamy</button>
           </div>
-          <div>
-            <p>Venujeme sa moderným zateplením a izolácii objektov. Naším dlhodobým cieľom je napĺňanie potrieb našich budúcich zákazníkov spôsobom, ktorý zodpovedá aj najnáročnejším požiadavkám na kvalitu</p>
-            <p>Pri našej práci používame výhradne len kvalitnú izolačnú PUR penu od poprednej svetovej spoločnosti Huntsman Building Solutions.</p>
-          </div>
-          <div>
-            <p>Podpora zamestnanosti prostredníctvom inovácií v spoločnosti DOMCO s.r.o.</p>
-          </div>
+          <p class="footer-text">
+            Venujeme sa moderným zateplením a izolácii objektov. Naším dlhodobým cieľom je napĺňanie potrieb našich budúcich zákazníkov spôsobom, ktorý zodpovedá aj najnáročnejším požiadavkám na kvalitu 
+            <br><br>
+            Pri našej práci používame výhradne len kvalitnú izolačnú PUR penu od poprednej svetovej spoločnosti Huntsman Building Solutions.
+          </p>
+          <p class="footer-text">Podpora zamestnanosti prostredníctvom inovácií v spoločnosti DOMCO s.r.o.</p>
         </div>
-        <span>© Copyright 2024 Domco s.r.o. - Všetky práva vyhradené / All Rights Reserved</span>
+        <span class="footer-text">© Copyright 2024 Domco s.r.o. - Všetky práva vyhradené / All Rights Reserved</span>
       </div>
     </footer>
 

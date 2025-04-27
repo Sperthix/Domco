@@ -1,19 +1,13 @@
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-// Inicializácia Swiperu
+// Swiper
 const swiper = new Swiper('.swiper-container', {
   loop: true,
   slidesPerView: 1,
   spaceBetween: 24,
-  
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
 
   breakpoints: {
     768: {
@@ -25,3 +19,58 @@ const swiper = new Swiper('.swiper-container', {
   }
 });
 
+// Swiper Navigation
+document.getElementById('swiper-btn-prev').addEventListener('click', () => {
+  swiper.slidePrev();
+});
+document.getElementById('swiper-btn-next').addEventListener('click', () => {
+  swiper.slideNext();
+});
+
+// Parts
+
+const content = {
+  roof: {
+    text: 'Izolácia strechy mäkkou penou zvonka sa využíva najmä pri novostavbách...'
+  },
+  attic: {
+    text: 'Izolácia podkrovia zabezpečí skvelú tepelnú izoláciu a zníženie tepelných strát...'
+  },
+  ceiling: {
+    text: 'Izolácia stropov napomáha k zachovaniu tepla v horných miestnostiach domu...'
+  },
+  walls: {
+    text: 'Steny izolované striekanou penou zabezpečujú výbornú akustiku a energetickú úsporu...'
+  },
+  fasade: {
+    text: 'Fasády s kvalitnou izoláciou predĺžia životnosť stavby a znížia prevádzkové náklady...'
+  },
+  floor: {
+    text: 'Izolácia podláh zabezpečuje lepší tepelný komfort a oddeľuje chladu zo zeme...'
+  }
+};
+
+const menuItems = document.querySelectorAll('.parts-menu-item');
+const description = document.getElementById('part-description');
+
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+
+    menuItems.forEach(i => i.classList.remove('selected', 'parts-menu-border-top', 'parts-menu-border-bottom'));
+
+    item.classList.add('selected');
+
+    if (item.previousElementSibling) {
+      item.previousElementSibling.classList.add('parts-menu-border-bottom');
+    } else item.classList.add('parts-menu-border-top')
+
+    if (item.nextElementSibling) {
+      item.nextElementSibling.classList.add('parts-menu-border-top');
+    } else item.classList.add('parts-menu-border-bottom');
+
+    const part = item.getAttribute('data-part');
+    if (content[part]) {
+      description.textContent = content[part].text;
+    }
+  });
+});
