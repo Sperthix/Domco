@@ -108,28 +108,20 @@
     }
 
     .parts-menu-item {
-        @apply relative flex items-center gap-2 p-4 w-full cursor-pointer transition-all duration-300 ease-in-out bg-[var(--color-grey-bg)] text-left box-content;
+        @apply relative flex items-center gap-2 p-4 w-full cursor-pointer transition-all duration-300 ease-in-out bg-[var(--color-grey-bg)] text-left;
     }
 
     .parts-menu-item.selected {
-        @apply bg-white text-[var(--color-green-light)] font-bold border-l-10 border-[var(--color-green-light)];
-    }
-
-    .parts-menu-border-bottom {
-        @apply border-b-10 border-[var(--color-green-light)]
-    }
-
-    .parts-menu-border-top {
-        @apply border-t-10 border-[var(--color-green-light)];
+        @apply bg-white text-[var(--color-green-light)] font-bold border-10 border-[var(--color-green-light)] rounded-l-[28px];
     }
 
     .parts-menu-item.selected::after {
         content: "";
         position: absolute;
         top: 0;
-        right: 50px;
+        right: -10px;
         height: 100%;
-        width: 50px;
+        width: 60px;
         z-index: 30;
         background-color: white;
     }

@@ -56,17 +56,9 @@ const description = document.getElementById('part-description');
 menuItems.forEach(item => {
   item.addEventListener('click', () => {
 
-    menuItems.forEach(i => i.classList.remove('selected', 'parts-menu-border-top', 'parts-menu-border-bottom'));
+    menuItems.forEach(i => i.classList.remove('selected'));
 
     item.classList.add('selected');
-
-    if (item.previousElementSibling) {
-      item.previousElementSibling.classList.add('parts-menu-border-bottom');
-    } else item.classList.add('parts-menu-border-top')
-
-    if (item.nextElementSibling) {
-      item.nextElementSibling.classList.add('parts-menu-border-top');
-    } else item.classList.add('parts-menu-border-bottom');
 
     const part = item.getAttribute('data-part');
     if (content[part]) {
