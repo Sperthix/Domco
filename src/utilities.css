@@ -51,9 +51,14 @@
         clip-path: polygon(0 100%, 25% 0, 100% 0%, 100% 100%);
     }
 
-    .bg-hero-shape {
-        background: url('/src/assets/hero-vector.svg') no-repeat;
-        background-size: contain;
+    .clip-path-hero {
+        clip-path: polygon(
+            0% 0%,
+            0% 30%,
+            20% 100%,
+            100% 100%,
+            100% 0%
+        );
     }
   }
   
