@@ -3,10 +3,21 @@
     /* General */
     .container-wrapper {
         @apply w-full max-w-[1028px] mx-auto;
+        @apply px-3 lg:px-0;
     }
   
     .flex-container {
         @apply flex items-center justify-center;
+    }
+
+    /* Menu */
+    .nav-menu {
+        @apply flex items-center justify-between text-sm leading-none tracking-normal gap-6;
+        @apply max-lg:flex-col max-lg:absolute max-lg:top-full max-lg:left-0 max-lg:w-full z-20 max-lg:bg-white max-lg:py-4 lg:gap-9.5;
+    }
+
+    .btn-calculate {
+        @apply flex items-center justify-between bg-[var(--color-orange-bg)] rounded-[5px] px-5.5 py-1.5 gap-1.5 cursor-pointer max-md:hidden;
     }
 
 
@@ -59,10 +70,6 @@
 
     .card-text {
         @apply text-[1rem] text-center;
-    }
-
-    .btn-calculate {
-        @apply flex items-center justify-between bg-[var(--color-orange-bg)] rounded-[5px] px-5.5 py-1.5 gap-1.5 cursor-pointer;
     }
 
 

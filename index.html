@@ -17,11 +17,11 @@
 
       <!-- Akcia banner -->
       <div class="bg-green-light">
-        <div class="container-wrapper flex-between text-white py-4.5 text-[0.75rem] leading-none tracking">
+        <div class="container-wrapper flex-between flex-col md:flex-row max-md:gap-3 max-md:text-center text-white py-4.5 text-[0.75rem] leading-none tracking">
           <span>
             Pozor! Len teraz špeciálna akcia. Ku každej realizácii tlakový čistič zdarma!
           </span>
-          <div class="flex items-center gap-9">
+          <div class="flex items-center justify-between lg:justify-end lg:gap-9 max-md:w-full">
             <div class="flex-between gap-2.5">
               <img src="src/assets/icon-phone.svg" alt="telefón ikona" />
               <span>tel: +421 911 222 333</span>
@@ -35,10 +35,14 @@
       </div>
 
       <!-- Menu -->
-      <div class="container-wrapper flex-between py-6 w-full">
-        <a href="#"><img src="src/assets/domco-logo.png" alt="Domco logo" /></a>
+      <div class="container-wrapper relative flex items-center justify-between gap-5 sm:flex-between py-6 w-full">
+        <a href="#">
+          <img src="src/assets/domco-logo.png" alt="Domco logo" class="h-8 w-auto" />
+        </a>
+      
+        <!-- Navigation -->
         <nav class="flex-between gap-9">
-          <ul class="flex-between gap-9.5 text-sm leading-none tracking-normal">
+          <ul id="nav-menu" class="hidden lg:flex nav-menu">
             <li><a href="#">Produkty</a></li>
             <li><a href="#">Riešenia</a></li>
             <li><a href="#">Škola izolácie</a></li>
@@ -50,6 +54,13 @@
             <span class="font-medium text-sm tracking-normal">Vypočítať cenu</span>
           </button>
         </nav>
+
+        <!-- Hamburger button - hidden on desktop -->
+        <button id="menu-toggle" class="lg:hidden flex flex-col justify-center items-center gap-1 cursor-pointer">
+          <span class="block w-6 h-0.5 bg-black"></span>
+          <span class="block w-6 h-0.5 bg-black"></span>
+          <span class="block w-6 h-0.5 bg-black"></span>
+        </button>
       </div>
     </header>
 

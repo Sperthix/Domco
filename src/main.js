@@ -1,7 +1,13 @@
 import Swiper from 'swiper';
-
 import 'swiper/css';
-import 'swiper/css/navigation';
+
+// Menu
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+
+menuToggle.addEventListener('click',() => {
+  navMenu.classList.toggle('hidden');
+})
 
 // Swiper
 function updateSlidesGrayState(swiper) {
