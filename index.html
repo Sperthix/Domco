@@ -17,16 +17,16 @@
 
       <!-- Akcia banner -->
       <div class="bg-green-light">
-        <div class="container-wrapper flex items-center justify-between text-white py-4.5 text-[0.75rem] leading-none tracking">
+        <div class="container-wrapper flex-between text-white py-4.5 text-[0.75rem] leading-none tracking">
           <span>
             Pozor! Len teraz špeciálna akcia. Ku každej realizácii tlakový čistič zdarma!
           </span>
           <div class="flex items-center gap-9">
-            <div class="flex items-center justify-between gap-2.5">
+            <div class="flex-between gap-2.5">
               <img src="src/assets/icon-phone.svg" alt="telefón ikona" />
               <span>tel: +421 911 222 333</span>
             </div>
-            <div class="flex items-center justify-between gap-2.5">
+            <div class="flex-between gap-2.5">
               <img src="src/assets/icon-mail.svg" alt="email ikona" />
               <span>domco@domco.sk</span>
             </div>
@@ -35,10 +35,10 @@
       </div>
 
       <!-- Menu -->
-      <div class="container-wrapper flex items-center justify-between py-6 w-full">
+      <div class="container-wrapper flex-between py-6 w-full">
         <a href="#"><img src="src/assets/domco-logo.png" alt="Domco logo" /></a>
-        <nav class="flex items-center justify-between gap-9">
-          <ul class="flex items-center justify-between gap-9.5 text-[0.875rem] leading-none tracking-normal">
+        <nav class="flex-between gap-9">
+          <ul class="flex-between gap-9.5 text-sm leading-none tracking-normal">
             <li><a href="#">Produkty</a></li>
             <li><a href="#">Riešenia</a></li>
             <li><a href="#">Škola izolácie</a></li>
@@ -47,7 +47,7 @@
           </ul>
           <button class="btn-calculate">
             <img src="src/assets/calculator-black.svg" alt="kalkulačka" class="w-2.75" />
-            <span class="font-medium text-[0.875rem] tracking-normal">Vypočítať cenu</span>
+            <span class="font-medium text-sm tracking-normal">Vypočítať cenu</span>
           </button>
         </nav>
       </div>
@@ -76,7 +76,7 @@
             <div class="flex flex-col justify-center gap-5 w-[40%]">
               <h2 class="text-white tracking-[-0.01em]">Vyskúšajte našu online kalkulačku!</h2>
               <p>Sme za férovú komunikáciu, a preto ako jediní na trhu ponúkame online kalkuláciu priamo na našom webe.</p>
-              <button class="flex items-center justify-center gap-2 px-6 py-3 bg-black text-white rounded-[8px] w-max cursor-pointer">
+              <button class="flex-center gap-2 px-6 py-3 bg-black text-white rounded-8 w-max cursor-pointer">
                 <img src="src/assets/calculator-white.svg" alt="kalkulačka" class="w-5 h-5" />
                 <span>Vypočítať cenu online</span>
               </button>
@@ -180,7 +180,7 @@
             </div>
           </div>
         </div>
-        <button class="rounded-[5px] mt-9 py-2 px-16 self-center bg-[var(--color-green-dark)] text-white cursor-pointer">
+        <button class="rounded-5 mt-9 py-2 px-16 self-center bg-green-dark text-white cursor-pointer">
           Všetky recenzie
         </button>
       </section>
@@ -188,7 +188,7 @@
       <!-- Cards -->
       <section class="mb-18">
         <div>
-          <div class="relative bg-[var(--color-green-bg)] py-7.5 mb-10">
+          <div class="relative bg-green py-7.5 mb-10">
             <div class="container-wrapper">
               <h2 class="text-white mb-7.5 max-w-2/3">Izolační technologie, která odpovídá požadavkům kvality</h2>
               <p class="max-w-2/3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum</p>
@@ -232,7 +232,7 @@
           
           <!-- Card - platinum-S -->
           <div class="card-plat">
-            <div class="card-plat-top border-[var(--color-orange-border)]">
+            <div class="card-plat-top border-orange">
               <img src="src/assets/cube.png" alt="izolácia" class="min-w-[600px] h-auto z-10 -mt-60" />
               <h3 class="card-plat-heading">
                 NordSchild PLATINUM S
@@ -263,7 +263,7 @@
                 <span>Celosvetová certifikácia 100 % bunky s otvorenou štruktúrou</span>
               </div>
 
-              <button class="card-plat-button bg-[var(--color-orange-highlight)]">
+              <button class="card-plat-button bg-orange-highlight">
                 <img src="src/assets/calculator-white.svg" alt="kalkulačka" class="w-5 h-5" />
                 <span>Technický list NordShield PS®</span>
               </button>
@@ -272,7 +272,7 @@
 
           <!-- Card - platinum-H -->
           <div class="card-plat">
-            <div class="card-plat-top border-[var(--color-green-light)]">
+            <div class="card-plat-top border-green-light">
               <img src="src/assets/cube.png" alt="izolácia" class="min-w-[600px] h-auto z-10 -mt-60" />
               <h3 class="card-plat-heading">
                 NordSchild PLATINUM H
@@ -303,7 +303,7 @@
                 <span>Celosvetová certifikácia 100 % bunky s otvorenou štruktúrou</span>
               </div>
 
-              <button class="card-plat-button bg-[var(--color-green-light)]">
+              <button class="card-plat-button bg-green-light">
                 <img src="src/assets/calculator-white.svg" alt="kalkulačka" class="w-5 h-5" />
                 <span>Technický list NordShield PH®</span>
               </button>
@@ -344,17 +344,17 @@
               <span>Podlaha</span>
             </button>
           </div>
-          <div class="relative flex items-stretch justify-between gap-10 py-10 px-5 border-10 border-[var(--color-green-light)] rounded-[28px] w-4/5 bg-white pointer-events-none">
+          <div class="relative flex items-stretch justify-between gap-10 py-10 px-5 border-10 border-green-light rounded-28 w-4/5 bg-white pointer-events-none">
             <img src="src/assets/house.png" alt="vizualizácia" class="w-[400px] h-auto"/>
             <div class="flex flex-col items-stretch justify-between">
               <div class="flex flex-col items-start justify-between gap-5">
                 <p id="part-description" class="text-secondary">Izolácia strechy mäkkou penou zvonka sa využíva najmä pri novostavbách na zachovanie priznaných krokiev. Pri starších domoch sa aplikuje pri rekonštrukciách, keď je minerálna vlna poškodená škodcami a vonkajšia prerábka je ekonomickejšia.</p>
-                <button class="flex items-center justify-between gap-5 bg-orange-highlight rounded-[8px] py-3 px-7 cursor-pointer">
+                <button class="flex-between gap-5 bg-orange-highlight rounded-8 py-3 px-7 cursor-pointer">
                   <img src="src/assets/calculator-black.svg" alt="kalkulačka" />
                   <span>Vypočítať cenu online</span>
                 </button>
               </div>
-              <button class="flex items-center justify-between self-end gap-2 bg-grey-light text-white rounded-[8px] py-3 px-5 w-[225px] cursor-pointer">
+              <button class="flex-between self-end gap-2 bg-grey-light text-white rounded-8 py-3 px-5 w-[225px] cursor-pointer">
                 <img src="src/assets/play.svg" alt="play" />
                 <span class="whitespace-nowrap">Ako prebieha izolácia?</span>
               </button>
@@ -367,7 +367,7 @@
       <section class="container-wrapper mb-20">
         <h2 class="w-1/2 mb-7">Pravidelné novinky zo sveta izolácií</h2>
         <p class="w-1/2 mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. </p>
-        <div class="flex items-center justify-between gap-8">
+        <div class="flex-between gap-8">
 
           <!-- Article 1 -->
           <article>
@@ -412,7 +412,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[var(--color-green-dark)] pt-19 pb-10">
+    <footer class="bg-green-dark pt-19 pb-10">
       <div class="container-wrapper">
         <div class="flex items-start justify-between gap-10 mb-35">
           <div>

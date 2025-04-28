@@ -9,28 +9,26 @@
   
     /* ===== Pozadie ===== */
     .bg-green-light { background-color: var(--color-green-light); }
-    .bg-green-bg { background-color: var(--color-green-bg); }
+    .bg-green { background-color: var(--color-green-bg); }
     .bg-green-dark { background-color: var(--color-green-dark); }
-    .bg-orange-bg { background-color: var(--color-orange-bg); }
+    .bg-orange { background-color: var(--color-orange-bg); }
     .bg-orange-highlight { background-color: var(--color-orange-highlight); }
     .bg-grey-bg { background-color: var(--color-grey-bg); }
     .bg-grey-light { background-color: var(--color-grey-light); }
   
     /* ===== Border farby ===== */
     .border-green-light { border-color: var(--color-green-light); }
-    .border-orange-border { border-color: var(--color-orange-border); }
-    .border-grey-border { border-color: var(--color-grey-border); }
+    .border-orange { border-color: var(--color-orange-border); }
+    .border-grey { border-color: var(--color-grey-border); }
   
     /* ===== Rounded corners ===== */
     .rounded-5 { border-radius: 5px; }
+    .rounded-8 { border-radius: 8px; }
     .rounded-20 { border-radius: 20px; }
     .rounded-28 { border-radius: 28px; }
   
-    /* ===== Hrúbky písma ===== */
-    .font-medium { font-weight: 500; }
-    .font-bold { font-weight: 700; }
-  
     /* ===== Typografia ===== */
+    .text-sm { font-size: 0.875rem; }
     .text-base { font-size: 1rem; }
     .text-lg { font-size: 1.25rem; }
     .text-xl { font-size: 1.5rem; }
@@ -48,7 +46,12 @@
     .flex-col-center { @apply flex flex-col items-center justify-center; }
 
     .clip-path-car {
-        clip-path: polygon(0 100%, 25% 0, 100% 0%, 100% 100%);
+        clip-path: polygon(
+            0 100%,
+            25% 0,
+            100% 0,
+            100% 100%
+        );
     }
 
     .clip-path-hero {
