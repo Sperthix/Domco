@@ -154,7 +154,7 @@
     }
 
     .article-btn {
-        @apply flex items-center justify-center px-9 py-2 bg-[var(--color-green-dark)] text-white rounded-[5px] text-[0.875rem] cursor-pointer;
+        @apply flex items-center justify-center px-9 py-2 bg-[var(--color-green-dark)] text-white rounded-[5px] text-[0.875rem] max-lg:mx-auto cursor-pointer;
     }
 
 
