@@ -57,7 +57,7 @@
 
     /* Cards */
     .card {
-        @apply flex flex-1 flex-col items-center justify-between gap-5 border-4 border-[var(--color-grey-border)] rounded-[28px] p-5;
+        @apply flex flex-1 flex-col items-center justify-between gap-5 border-4 border-[var(--color-grey-border)] rounded-[28px] p-5 w-full sm:w-[48%] lg:w-[23%];
     }
 
     .card-img {
