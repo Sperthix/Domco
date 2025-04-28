@@ -160,6 +160,6 @@
 
     /* Footer */
     .footer-text {
-        @apply text-white text-[1rem] leading-[120%] tracking-[0.03em];
+        @apply text-white text-[1rem] leading-[120%] tracking-[0.03em] max-lg:text-center;
     }
 }
