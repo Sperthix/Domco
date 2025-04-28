@@ -4,18 +4,42 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 // Swiper
+function updateSlidesGrayState(swiper) {
+  swiper.slides.forEach(slide => {
+    const rect = slide.getBoundingClientRect();
+    if (rect.left < 0 || rect.right > window.innerWidth) {
+      slide.classList.add('gray-slide');
+    } else {
+      slide.classList.remove('gray-slide');
+    }
+  });
+}
+
 const swiper = new Swiper('.swiper-container', {
   loop: true,
-  slidesPerView: 1,
-  spaceBetween: 24,
+  slidesPerView: 1.4,
+  spaceBetween: 12,
+  centeredSlides: true,
 
   breakpoints: {
     768: {
       slidesPerView: 3,
+      spaceBetween: 33,
     },
     1024: {
       slidesPerView: 5,
+    },
+    1920: {
+      slidesPerView: 7
     }
+  },
+  on: {
+    init(swiper) {
+      updateSlidesGrayState(swiper);
+    },
+    transitionEnd(swiper) {
+      updateSlidesGrayState(swiper);
+    },
   }
 });
 
