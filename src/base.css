@@ -33,7 +33,7 @@
     }
 
     h1 {
-        @apply text-[4.375rem] font-medium text-[var(--color-green-light)] leading-none;
+        @apply text-[4.375rem] font-medium text-[var(--color-green-light)] leading-none max-lg:text-[3.5rem];
     }
 
     h2 {

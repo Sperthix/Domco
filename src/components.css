@@ -49,7 +49,7 @@
     }
 
     .gray-slide {
-        @media (min-width > 768px) {
+        @media (min-width: 768px) {
             filter: grayscale(100%) opacity(0.5);   
         }
     }

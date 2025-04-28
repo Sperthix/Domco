@@ -55,13 +55,15 @@
     }
 
     .clip-path-hero {
-        clip-path: polygon(
-            0% 0%,
-            0% 30%,
-            20% 100%,
-            100% 100%,
-            100% 0%
-        );
+        @media (min-width: 1024px) {
+            clip-path: polygon(
+                0% 0%,
+                0% 30%,
+                15% 100%,
+                100% 100%,
+                100% 0%
+            );
+        }
     }
   }
   

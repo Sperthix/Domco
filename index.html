@@ -69,24 +69,24 @@
       <!-- Hero -->
       <section class="relative mb-15">
         <!-- Horná časť: obrázok + text -->
-        <div class="relative min-h-[530px] flex items-center">
+        <div class="relative lg:min-h-[530px] flex items-center">
           <!-- Pozadie hero image -->
-          <div class="absolute top-0 bottom-0 right-0 left-[-250px] overflow-hidden">
+          <div class="absolute top-0 bottom-0 right-0 left-[-250px] overflow-hidden max-lg:hidden">
             <div class="hero-img"></div>
           </div>
           <!-- Text na hero -->
-          <div class="container-wrapper relative flex items-center justify-end">
-            <h1 class="w-[65%] -mt-50 -mr-10">Moderné zateplenie a izolácia objektov</h1>
+          <div class="container-wrapper relative flex lg:items-center justify-end">
+            <h1 class="lg:w-[65%] lg:-mt-50 lg:-mr-10 max-lg:text-center max-lg:py-20">Moderné zateplenie a izolácia objektov</h1>
           </div>
         </div>
 
         <!-- Spodná oranžová časť -->
-        <div class="relative w-[70%] -mt-35 ml-auto bg-orange rounded-tl-[80px] rounded-bl-[200px] clip-path-hero overflow-hidden">
-          <div class="container-wrapper py-10 flex items-center gap-8 -mt-15">
+        <div class="relative lg:w-[70%] lg:-mt-35 ml-auto bg-orange lg:rounded-tl-[800px] lg:rounded-bl-[2000px] clip-path-hero overflow-hidden">
+          <div class="container-wrapper py-10 flex flex-col lg:flex-row items-center max-lg:justify-center gap-8 lg:-mt-15">
             <img src="src/assets/house.png" alt="domček" class="w-[350px] h-auto" />
-            <div class="flex flex-col justify-center gap-5 w-[40%]">
-              <h2 class="text-white tracking-[-0.01em]">Vyskúšajte našu online kalkulačku!</h2>
-              <p>Sme za férovú komunikáciu, a preto ako jediní na trhu ponúkame online kalkuláciu priamo na našom webe.</p>
+            <div class="flex flex-col max-lg:items-center justify-center gap-5 lg:w-[40%]">
+              <h2 class="text-white tracking-[-0.01em] max-lg:text-center">Vyskúšajte našu online kalkulačku!</h2>
+              <p class="max-lg:text-center">Sme za férovú komunikáciu, a preto ako jediní na trhu ponúkame online kalkuláciu priamo na našom webe.</p>
               <button class="flex-center gap-2 px-6 py-3 bg-black text-white rounded-8 w-max cursor-pointer">
                 <img src="src/assets/calculator-white.svg" alt="kalkulačka" class="w-5 h-5" />
                 <span>Vypočítať cenu online</span>
@@ -99,7 +99,7 @@
       <!-- Reviews - Swiper -->
       <section class="relative flex flex-col mb-20">
         <div class="container-wrapper">
-          <h2 class="mb-10 w-[40%]">Čo o nás hovoria naši zákazníci?</h2>
+          <h2 class="mb-10 lg:w-[40%] max-lg:text-center">Čo o nás hovoria naši zákazníci?</h2>
         </div>
         <div class="swiper-container -mx-[10vw]">
           <div class="swiper-wrapper">
