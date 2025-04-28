@@ -36,10 +36,6 @@
     .tracking-tight { letter-spacing: -0.01em; }
     .tracking-wide { letter-spacing: 0.03em; }
   
-    /* ===== Separátory ===== */
-    .separator-xl { width: 15.5rem; height: 2px; background-color: var(--color-grey-border); margin: 2rem 0; }
-    .separator-sm { width: 4.5rem; height: 2px; background-color: var(--color-grey-border); margin: 1.875rem 0; }
-  
     /* ===== Flex pomocné triedy ===== */
     .flex-center { @apply flex items-center justify-center; }
     .flex-between { @apply flex items-center justify-between; }
