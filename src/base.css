@@ -19,6 +19,8 @@
     --color-grey-border: #9B9B9B;
     --color-grey-bg: #EBEBEB;
     --color-grey-light: #BCBCBC;
+
+    --breakpoint-3xl: 105rem;
 }
 
 @layer base {
