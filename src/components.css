@@ -122,6 +122,11 @@
             display: none;
         }
     }
+    
+    .house-part-icon {
+        @apply opacity-35;
+    }
+
     .parts-menu {
         @apply flex lg:flex-col relative overflow-hidden w-full lg:w-[23%] bg-[var(--color-grey-bg)] max-lg:rounded-t-[28px] lg:rounded-l-[28px] max-lg:-mb-7 lg:-mr-7 pointer-events-auto;
     }
@@ -165,6 +170,10 @@
             height: 100%;
             width: 60px;
         }
+    }
+
+    .selected .house-part-icon {
+        @apply opacity-100;
     }
 
 
