@@ -64,7 +64,7 @@ const content = {
     text: 'Izolácia strechy mäkkou penou zvonka sa využíva najmä pri novostavbách...'
   },
   attic: {
-    text: 'Izolácia podkrovia zabezpečí skvelú tepelnú izoláciu a zníženie tepelných strát...'
+    text: 'Izolácia strechy mäkkou penou zvonka sa využíva najmä pri novostavbách na zachovanie priznaných krokiev. Pri starších domoch sa aplikuje pri rekonštrukciách, keď je minerálna vlna poškodená škodcami a vonkajšia prerábka je ekonomickejšia.'
   },
   ceiling: {
     text: 'Izolácia stropov napomáha k zachovaniu tepla v horných miestnostiach domu...'

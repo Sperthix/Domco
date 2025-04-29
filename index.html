@@ -392,9 +392,9 @@
       </section>
 
       <!-- Fun Part -->
-      <section class="container-wrapper mb-17 overflow-hidden">
+      <section class="container-wrapper house-part">
         <h2 class="mb-8">Realizujeme izolácie domov, drevostavieb, chát, pracovných hál.</h2>
-        <div class="flex">
+        <div class="flex max-lg:flex-col">
           <div class="parts-menu">
             <!-- Menu -->
             <button class="parts-menu-item" data-part="roof">
@@ -422,17 +422,17 @@
               <span>Podlaha</span>
             </button>
           </div>
-          <div class="relative flex items-stretch justify-between gap-10 py-10 px-5 border-10 border-green-light rounded-28 w-4/5 bg-white pointer-events-none">
-            <img src="src/assets/house.png" alt="vizualizácia" class="w-[400px] h-auto"/>
-            <div class="flex flex-col items-stretch justify-between">
-              <div class="flex flex-col items-start justify-between gap-5">
-                <p id="part-description" class="text-secondary">Izolácia strechy mäkkou penou zvonka sa využíva najmä pri novostavbách na zachovanie priznaných krokiev. Pri starších domoch sa aplikuje pri rekonštrukciách, keď je minerálna vlna poškodená škodcami a vonkajšia prerábka je ekonomickejšia.</p>
+          <div class="relative flex items-center lg:items-stretch justify-between gap-5 lg:gap-10 py-10 px-5 border-10 border-green-light rounded-28 max-lg:w-full lg:w-4/5 bg-white pointer-events-none">
+            <img src="src/assets/house-parts.png" alt="vizualizácia" class="w-[200px] h-[200px] lg:w-[400px] lg:h-auto"/>
+            <div class="flex flex-col items-stretch justify-between pointer-events-auto">
+              <div class="flex flex-col items-center lg:items-start justify-between gap-5">
+                <p id="part-description" class="text-secondary max-lg:text-center">Izolácia strechy mäkkou penou zvonka sa využíva najmä pri novostavbách na zachovanie priznaných krokiev. Pri starších domoch sa aplikuje pri rekonštrukciách, keď je minerálna vlna poškodená škodcami a vonkajšia prerábka je ekonomickejšia.</p>
                 <button class="flex-between gap-5 bg-orange-highlight rounded-8 py-3 px-7 cursor-pointer">
                   <img src="src/assets/calculator-black.svg" alt="kalkulačka" />
                   <span>Vypočítať cenu online</span>
                 </button>
               </div>
-              <button class="flex-between self-end gap-2 bg-grey-light text-white rounded-8 py-3 px-5 w-[225px] cursor-pointer">
+              <button class="flex-between self-center lg:self-end gap-2 bg-grey-light text-white rounded-8 py-3 px-5 w-[225px] mt-5 cursor-pointer">
                 <img src="src/assets/play.svg" alt="play" />
                 <span class="whitespace-nowrap">Ako prebieha izolácia?</span>
               </button>
@@ -506,8 +506,6 @@
           </article>
         </div>
       </section>
-      
-      
       
     </main>
 

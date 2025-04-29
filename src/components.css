@@ -116,27 +116,55 @@
 
 
     /* Parts */
+    .house-part {
+        @apply mb-17 overflow-hidden;
+        @media (max-width: 580px) {
+            display: none;
+        }
+    }
     .parts-menu {
-        @apply flex flex-col relative overflow-hidden w-[23%] bg-[var(--color-grey-bg)] rounded-l-[28px] -mr-7 pointer-events-auto;
+        @apply flex lg:flex-col relative overflow-hidden w-full lg:w-[23%] bg-[var(--color-grey-bg)] max-lg:rounded-t-[28px] lg:rounded-l-[28px] max-lg:-mb-7 lg:-mr-7 pointer-events-auto;
     }
 
     .parts-menu-item {
-        @apply relative flex items-center gap-2 p-4 w-full cursor-pointer transition-all duration-300 ease-in-out bg-[var(--color-grey-bg)] text-left;
+        @apply relative flex max-lg:flex-col items-center gap-2 p-4 w-full cursor-pointer transition-all duration-300 ease-in-out bg-[var(--color-grey-bg)] text-left;
     }
 
+    /* :has compatibility? baseline 2023 */
+    /* .parts-menu-item:not(.selected):not(:has(+ .selected)) {
+        @apply border-b-[2px] border-[var(--color-grey-border)] opacity-[35%];
+    } */
+
+    .parts-menu-item:not(.selected):not(:last-child):not(:has(+ .selected))::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 2px;
+        width: 90%;
+        background-color: var(--color-grey-border);
+        opacity: 35%;
+      }
+      
     .parts-menu-item.selected {
-        @apply bg-white text-[var(--color-green-light)] font-bold border-10 border-[var(--color-green-light)] rounded-l-[28px];
+        @apply bg-white text-[var(--color-green-light)] font-bold border-10 border-[var(--color-green-light)] max-lg:rounded-t-[28px] lg:rounded-l-[28px];
     }
 
     .parts-menu-item.selected::after {
         content: "";
         position: absolute;
-        top: 0;
-        right: -10px;
-        height: 100%;
-        width: 60px;
         z-index: 30;
         background-color: white;
+        bottom: -10px;
+        height: 30px;
+        width: 100%;
+
+        @media (min-width: 1024px) {
+            top: 0;
+            right: -10px;
+            height: 100%;
+            width: 60px;
+        }
     }
 
 
